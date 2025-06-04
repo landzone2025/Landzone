@@ -24,3 +24,5 @@ jobs:
       run: |
         rsync -avz -e "ssh -o StrictHostKeyChecking=no" "./land-zone/" ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html
 
+
+
