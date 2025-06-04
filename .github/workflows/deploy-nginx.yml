@@ -24,4 +24,3 @@ jobs:
       run: |
         rsync -avz ./land zone/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html
  
-
