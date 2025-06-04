@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Landzone repository
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Setup SSH
@@ -22,5 +22,4 @@ jobs:
 
     - name: Deploy files to server
       run: |
-        rsync -avz ./land zone/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html
- 
+        rsync -avz "./land-zone/" ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/html
