@@ -222,42 +222,51 @@ h1 {
     color: #34495e;
 }
 
-
 form {
     background: #fff;
     padding: 30px;
-    padding-bottom: 0;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     max-width: 900px;
     margin: 30px auto;
-    padding-bottom: 30px;
     display: flex;
-  }
+    flex-direction: column; /* Stack elements vertically */
+}
 
-  form label {
+form img {
+    width: 100%; /* Make image responsive */
+    max-width: 200px; /* Limit max width */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+form h2 {
+    font-size: large;
+    text-align: center; /* Center the heading */
+}
+
+form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     font-size: medium;
     color: #333;
-  }
+}
 
-  form input {
+form input {
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     transition: border-color 0.3s;
-  }
+}
 
-  form input:focus {
+form input:focus {
     border-color: #99BC84;
     outline: none;
-  }
+}
 
-  form button {
+form button {
     width: 100%;
     padding: 12px;
     background: #99BC84;
@@ -267,68 +276,97 @@ form {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
-  }
-form h2{
-  font-size: large;
 }
-  form button:hover {
-    background: #99BC84;
-  }
-  form img{
-    width: 200px;
-    margin-right: 30px;
-  }
-  form:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-    border: solid 1px ;
-  }
-  .footer {
+
+form button:hover {
+    background: #88a872; /* Slightly darker on hover */
+}
+
+.footer {
     display: flex; 
-    justify-content: center; 
+    flex-direction: column; /* Stack footer elements vertically */
+    align-items: center; /* Center items */
     padding: 20px; 
-    padding-right: 15%;
     background-color: #99BC84; 
     border-top: 1px solid #e0e0e0; 
-  }
+}
 
 .footer-left img {
     max-width: 40%; 
     height: auto; 
     margin-bottom: 10px;
     border-radius: 20px; 
-    margin-left: 30%;
 }
 
 .contact-info {
     font-size: 14px; 
     color: white;
-    margin-left: 20%; 
+    text-align: center; /* Center text */
 }
 
 .footer-right {
     display: flex; 
     align-items: flex-start; 
+    justify-content: center; /* Center content */
+    margin-bottom: 20px; /* Space below the footer */
 }
 
 .fb-page {
-    width: 340px; 
+    width: 100%; /* Make Facebook page responsive */
+    max-width: 340px; 
     height: 300px;
 }
 
 .social-links {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; /* Center social links */
 }
+
 .social-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 24px;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
 }
+
 .social-links a:hover {
-  color: #0077ff;
+    color: #0077ff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    form h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer elements */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .footer-left img {
+        max-width: 80%; /* Make logo larger on small screens */
+    }
+
+    .contact-info {
+        font-size: 12px; /* Smaller font size for contact info */
+    }
+
+    .footer-right {
+        flex-direction: column; /* Stack Facebook page and social links */
+        align-items: center; /* Center items */
+    }
+
+    .fb-page {
+        width: 100%; /* Make Facebook page responsive */
+        max-width: 340px; /* Limit max width */
+    }
 }
 
 .typewriter-animation {
