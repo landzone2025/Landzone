@@ -80,8 +80,9 @@ body {
 }
 /* Responsive styles */
 @media (max-width: 768px) {
-  #navbarimg{
-    height: 120px;
+  span{
+    height: 80%;
+    margin-top: 0;
   }
     .hamburger {
         display: block;
