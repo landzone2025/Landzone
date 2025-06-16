@@ -504,12 +504,13 @@ form h2{
   position: relative;
   width: 100%;
   margin: 0 auto;
+  margin-top: 5px;
   border-right: 2px solid rgba(255,255,255,.75);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);   
-  height: 50px;
+  height: 80px;
 }
 
 
