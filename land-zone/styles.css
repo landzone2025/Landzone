@@ -504,6 +504,19 @@ form h2{
   position: relative;
   width: 100%;
   margin: 0 auto;
+  /* margin-top: 5px; */
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);   
+  /* height: 80px; */
+}
+@media (max-width: 768px) {
+  .cursor{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 5px;
   border-right: 2px solid rgba(255,255,255,.75);
   text-align: center;
@@ -511,8 +524,9 @@ form h2{
   overflow: hidden;
   transform: translateY(-50%);   
   height: 80px;
+  text-wrap: wrap;
 }
-
+}
 
 
 .carousel {
