@@ -25,7 +25,7 @@ function loadProperties(properties) {
                 </div>
             </div>
             <div class="property-details">
-                <p class="property-price">$${property.price.toLocaleString()} <a href="${property.youtube}"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></p>
+                <p class="property-price">$${property.price.toLocaleString()} <a href="${property.youtube}"><i class="fa fa-youtube-play" style="font-size:30px;color:red; margin-top:5px"></i></a></p>
                 <p class="property-info">${property.acres} კვ.მ</p>
                 <p class="location">${property.location}</p>
                
