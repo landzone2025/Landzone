@@ -20,7 +20,7 @@ function loadProperties(properties) {
             <div class="property-image">
                 <div class="carousel" id="carousel-${index}">
                     <button class="carousel-btn left" onclick="prevImage(${index})">❮</button>
-                    <img src="/img/${ folderName,firstImage}" alt="Property Image" id="carousel-image-${index}">
+                    <img src="/img/${folderName}${firstImage}" alt="Property Image" id="carousel-image-${index}">
                     <button class="carousel-btn right" onclick="nextImage(${index})">❯</button>
                 </div>
             </div>
@@ -47,7 +47,7 @@ const carouselData = {};
 function updateCarouselImage(cardIndex) {
     const data = carouselData[cardIndex];
     const imgElement = document.getElementById(`carousel-image-${cardIndex}`);
-    imgElement.src = `/img/${folderName,data.images[data.currentIndex]}`;
+    imgElement.src = `/img/${folderName}${data.images[data.currentIndex]}`;
 }
 
 function nextImage(cardIndex) {
