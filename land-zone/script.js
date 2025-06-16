@@ -34,7 +34,7 @@ function loadProperties(properties) {
         // Store images and index in a global map
         carouselData[index] = {
             images: images,
-            folderName: folderName,
+            foldername: folderName,
             currentIndex: 0
         };
 
@@ -47,7 +47,7 @@ const carouselData = {};
 
 function updateCarouselImage(cardIndex) {
     const data = carouselData[cardIndex];
-    const folderName = carouselData[folderName];
+    const folderName = data.foldername;
     const imgElement = document.getElementById(`carousel-image-${cardIndex}`);
     imgElement.src = `/img/${folderName}${data.images[data.currentIndex]}`;
 }
