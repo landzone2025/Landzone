@@ -26,7 +26,7 @@ function loadProperties(properties) {
             </div>
             <div class="property-details">
                 <p class="property-price">$${property.price.toLocaleString()}</p>
-                <p class="property-info">${property.acres} Acres</p>
+                <p class="property-info">${property.acres} კვ.მ</p>
                 <p class="location">${property.location}</p>
             </div>
         `;
@@ -34,6 +34,7 @@ function loadProperties(properties) {
         // Store images and index in a global map
         carouselData[index] = {
             images: images,
+            folderName: folderName,
             currentIndex: 0
         };
 
@@ -46,6 +47,7 @@ const carouselData = {};
 
 function updateCarouselImage(cardIndex) {
     const data = carouselData[cardIndex];
+    const folderName = carouselData[folderName];
     const imgElement = document.getElementById(`carousel-image-${cardIndex}`);
     imgElement.src = `/img/${folderName}${data.images[data.currentIndex]}`;
 }
