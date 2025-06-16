@@ -509,7 +509,7 @@ form h2{
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);   
-  text-wrap: wrap; 
+  height: 50px;
 }
 
 
