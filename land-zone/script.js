@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     fetch("data.json") 
         .then(response => response.json())
@@ -9,13 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
 function loadProperties(properties) {
     const propertyList = document.getElementById("property-list");
     
-    properties.forEach(property => {
+    properties.forEach((property, index) => {
         const card = document.createElement("div");
         card.classList.add("property-card");
 
+        const images = property.image; // expect array like ["1.jpg", "2.jpg"]
+        const folderName = property.folderName;
+        const firstImage = images[0];
+
         card.innerHTML = `
             <div class="property-image">
-                <img src="/img/${property.image}" alt="Property Image">
+                <div class="carousel" id="carousel-${index}">
+                    <button class="carousel-btn left" onclick="prevImage(${index})">❮</button>
+                    <img src="/img/${ folderName,firstImage}" alt="Property Image" id="carousel-image-${index}">
+                    <button class="carousel-btn right" onclick="nextImage(${index})">❯</button>
+                </div>
             </div>
             <div class="property-details">
                 <p class="property-price">$${property.price.toLocaleString()}</p>
@@ -24,7 +31,33 @@ function loadProperties(properties) {
             </div>
         `;
 
+        // Store images and index in a global map
+        carouselData[index] = {
+            images: images,
+            currentIndex: 0
+        };
+
         propertyList.appendChild(card);
     });
+}
 
+// Global object to track carousel state for each card
+const carouselData = {};
+
+function updateCarouselImage(cardIndex) {
+    const data = carouselData[cardIndex];
+    const imgElement = document.getElementById(`carousel-image-${cardIndex}`);
+    imgElement.src = `/img/${folderName,data.images[data.currentIndex]}`;
+}
+
+function nextImage(cardIndex) {
+    const data = carouselData[cardIndex];
+    data.currentIndex = (data.currentIndex + 1) % data.images.length;
+    updateCarouselImage(cardIndex);
+}
+
+function prevImage(cardIndex) {
+    const data = carouselData[cardIndex];
+    data.currentIndex = (data.currentIndex - 1 + data.images.length) % data.images.length;
+    updateCarouselImage(cardIndex);
 }
