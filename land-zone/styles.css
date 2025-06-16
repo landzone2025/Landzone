@@ -80,6 +80,9 @@ body {
 }
 /* Responsive styles */
 @media (max-width: 768px) {
+  #navbarimg{
+    height: 120px;
+  }
     .hamburger {
         display: block;
     }
