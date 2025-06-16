@@ -9,7 +9,6 @@ body {
     background-color: #EFE9DB;
     
 }
-
 .hero {
     background-image: url('img/bg.webp'); 
     background-size: cover;
@@ -17,76 +16,21 @@ body {
     height: 450px; 
     position: relative;
 }
-.hero h1{
-  color: white;
-  width: 700px;
-  margin: 0 auto;
-  margin-top: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.541);
-  padding: 30px;
-}
-
-.hero h1 span{
-  font-weight: 100;
-  font-size: 16pt;
-}
-/* #navbarimg {
-    background-image: url('./img/white\ \ logo\ \(2\).png'); 
-    background-size: cover;
-    background-position: center;
-    height: 95.25px;
-    min-width: 100px;
-    position: relative;
-    border-radius: 10px;
-    margin: 10px;
-    
-}
-
-.navbar {
-    position: relative;
-    top: 0;
-    left: 0;
- 
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    transition: background 0.3s ease-in-out;
-    z-index: 1000;
-    padding-left: 15%;
-    padding-right: 50%;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,0.5) 85px, rgba(255,255,255,0) 100%);
-    
-}
-
-.navbar:hover {
-    background: #EFE9DB;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
+.hero h1 {
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 700px; /* Max width for larger screens */
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.541);
+    padding: 30px;
 }
-
-.navbar:hover .nav-links a {
-    color: black;
-} */
-/* Existing styles (your styles adjusted) */
+.hero h1 span {
+    font-weight: 100;
+    font-size: 1.2rem; /* Responsive font size */
+}
 #navbarimg {
     background-image: url('./img/white\ \ logo\ \(2\).png'); 
     background-size: cover;
@@ -96,7 +40,6 @@ body {
     border-radius: 10px;
     margin: 10px;
 }
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +50,6 @@ body {
     position: relative;
     z-index: 1000;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -115,23 +57,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1rem; /* Responsive font size */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
-
 .navbar:hover .nav-links a {
     color: black;
 }
-
 .navbar:hover {
     background: #EFE9DB;
 }
-
 /* Hamburger for small screens */
 .hamburger {
     display: none;
@@ -140,13 +78,11 @@ body {
     color: black;
     margin-left: auto;
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
     }
-
     .nav-links {
         flex-direction: column;
         width: 100%;
@@ -155,33 +91,29 @@ body {
         padding: 10px;
         border-top: 1px solid #ccc;
     }
-
     .nav-links li {
         margin: 10px 0;
     }
-
     .navbar.active .nav-links {
         display: flex;
     }
-
-    .navbar:hover .nav-links a {
-        color: black;
-    }
-
     .nav-links a {
         color: black;
     }
+    .hero h1 {
+        width: 90%; /* Adjusted for smaller screens */
+        padding: 20px; /* Adjusted padding */
+    }
 }
-
 .container {
     max-width: 1200px;
     margin: auto;
 }
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 
 .card-container {
     display: flex;
