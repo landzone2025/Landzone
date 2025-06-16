@@ -63,3 +63,8 @@ function prevImage(cardIndex) {
     data.currentIndex = (data.currentIndex - 1 + data.images.length) % data.images.length;
     updateCarouselImage(cardIndex);
 }
+
+  function toggleMenu() {
+    document.querySelector('.navbar').classList.toggle('active');
+  }
+
