@@ -128,6 +128,10 @@ body {
     color: black;
 }
 
+.navbar:hover {
+    background: #EFE9DB;
+}
+
 /* Hamburger for small screens */
 .hamburger {
     display: none;
