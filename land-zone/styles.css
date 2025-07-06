@@ -391,7 +391,7 @@ form button:hover {
     .contact-info {
         font-size: 16px; /* Smaller font size for contact info */
         margin-top: 130px;
-        padding-left: 7%;
+        padding-left: 5%;
         justify-content: center;
         width: 300px;
         /* position: absolute; */
