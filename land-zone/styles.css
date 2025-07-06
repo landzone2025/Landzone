@@ -202,7 +202,7 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 370px;
+    max-width: 350px;
     transition: transform 0.3s;
 }
 
@@ -391,7 +391,7 @@ form button:hover {
     .contact-info {
         font-size: 16px; /* Smaller font size for contact info */
         margin-top: 130px;
-        padding-left: 9%;
+        padding-left: 7%;
         justify-content: center;
         width: 300px;
         /* position: absolute; */
