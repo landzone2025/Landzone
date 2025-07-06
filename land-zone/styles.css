@@ -363,36 +363,7 @@ form button:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    form {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
-    form h2 {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .footer {
-        flex-direction: column; /* Stack footer elements */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .footer-left img {
-        max-width: 80%; /* Make logo larger on small screens */
-    }
-
-    .contact-info {
-        font-size: 12px; /* Smaller font size for contact info */
-    }
-
-    .footer-right {
-        flex-direction: column; /* Stack Facebook page and social links */
-        align-items: center; /* Center items */
-    }
-
-    .fb-page {
-        width: 100%; /* Make Facebook page responsive */
-        max-width: 340px; /* Limit max width */
-    }
+   
 }
 
 /* form {
