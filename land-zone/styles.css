@@ -391,7 +391,7 @@ form button:hover {
     .contact-info {
         font-size: 16px; /* Smaller font size for contact info */
         margin-top: 130px;
-        padding-left: 40px;
+        padding-left: 9%;
         justify-content: center;
         width: 300px;
         /* position: absolute; */
@@ -409,6 +409,11 @@ form button:hover {
     .fb-page {
         width: 100%; /* Make Facebook page responsive */
         max-width: 340px; /* Limit max width */
+    }
+    form img {
+        width: 40%; /* Make image responsive */
+        max-width: 200px; /* Limit max width */
+        margin-bottom: 20px; /* Space below the image */
     }
 }
 
