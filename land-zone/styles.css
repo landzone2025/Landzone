@@ -363,7 +363,53 @@ form button:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-   
+    form {
+        max-width:90%;
+        height: 90%;
+    }
+    .formtext h2{
+        font-size: medium;
+    text-align: left;
+    margin-left: 10px;
+    }
+    .formimput{
+        margin-left: 10px;
+    }
+    .footer {
+        /* flex-direction: column; Stack footer elements */
+
+        display: flex;
+        padding: 10px; /* Adjust padding */
+    }
+
+    .footer-left img {
+        min-width: 120px; /* Make logo larger on small screens */
+        position: absolute;
+        right: 35%;
+    }
+
+    .contact-info {
+        font-size: 16px; /* Smaller font size for contact info */
+        margin-top: 130px;
+        padding-left: 40px;
+        justify-content: center;
+        width: 300px;
+        /* position: absolute; */
+    }
+.contact-info p{
+    font-size: 18px; 
+    justify-content: center;
+    text-align: center;
+}
+    .footer-right {
+        flex-direction: column; /* Stack Facebook page and social links */
+        align-items: center; /* Center items */
+    }
+
+    .fb-page {
+        width: 100%; /* Make Facebook page responsive */
+        max-width: 340px; /* Limit max width */
+    }
 }
 
 /* form {
@@ -449,7 +495,7 @@ form h2{
     justify-content: space-between;
     font-size: 16px; 
     color: white; 
-    width: 65%;
+    width: 100%;
     margin-left: 10%;
 }
 
