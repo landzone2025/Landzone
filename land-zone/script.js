@@ -65,7 +65,18 @@ function prevImage(cardIndex) {
     updateCarouselImage(cardIndex);
 }
 
-  function toggleMenu() {
-    document.querySelector('.navbar').classList.toggle('active');
-  }
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    const textElement = document.querySelector('.texttext1');
+    
+    const isActive = navbar.classList.toggle('active');
+    console.log(textElement)
+    if (isActive) {
+        textElement.classList.add('possiotionText');
+    } else {
+        textElement.classList.remove('possiotionText');
+    }
+}
+
+   
 

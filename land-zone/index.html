@@ -66,7 +66,7 @@
           </ul>
         </nav>
 
-        <h1>ჩვენ გთავაზობთ: <br><br>
+        <h1 class="texttext1">ჩვენ გთავაზობთ: <br><br>
           <span>
             <p class="typewriter-animation cursor">მიწის პროფესიონალურ ფოტო-ვიდეო გადაღებას, დამონტაჟებას,</p>
             <p class="typewriter-animation2 cursor">  რეკლამას სოციალურ ქსელებში და რეალიზაციას </p>
@@ -99,17 +99,22 @@
     <br>
 
     <form action="http://localhost:3000/send-email" method="POST" id="contact">
-        <img src="img/test1.jpg" alt="" srcset="">
-        <div>
-          <h2 >გსურთ მიწის გაყიდვა ან პროფესიონალური ფოტო-ვიდეო გადაღება? </h2><br> <h2>მაშინ შეავსეთ ველი და ჩვენ თავად დაგიკავშირდებით</h2>
-          <br>
-
+        <div class="from1">
+          <img src="img/test1.jpg" alt="" srcset="">
+          <div class="formtext">
+            <h2 >გსურთ მიწის გაყიდვა ან პროფესიონალური ფოტო-ვიდეო გადაღება? </h2><br> <h2>მაშინ შეავსეთ ველი და ჩვენ თავად დაგიკავშირდებით</h2>
+          <div class="formimput">
           <label for="name">სახელი:</label>
           <input type="text" name="name" id="name" required />
       
           <label for="phone">ტელეფონი:</label>
           <input type="text" name="phone" id="phone" required />
       
+         
+          </div>
+          </div>
+        </div>
+        <div>
           <button type="submit">გაგზავნა</button>
         </div>
     </form>
@@ -118,10 +123,8 @@
     <footer class="footer">
       <div class="footer-left">
         <img src="img/white  logo (2).png" alt="Logo">
-    
-
       </div>
-        
+<!--         
       <div class="footer-right">
         <div class="fb-page" 
           data-href="https://www.facebook.com/bbcnews" 
@@ -136,7 +139,7 @@
           <a href="https://www.facebook.com/bbcnews">BBC News</a>
         </blockquote>
         </div>
-      </div>   
+      </div>    -->
       <div class="contact-info">
         <p class="social-links" style="color: white;">          
           <a href="https://facebook.com" target="_blank" aria-label="Facebook">

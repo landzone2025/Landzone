@@ -49,6 +49,8 @@ body {
     background: linear-gradient(180deg, rgba(255,255,255,0.5) 85px, rgba(255,255,255,0) 100%);
     position: relative;
     z-index: 1000;
+    padding-left: 15%;
+    padding-right: 10%;
 }
 .nav-links {
     list-style: none;
@@ -67,6 +69,7 @@ body {
 .navbar:hover .nav-links a {
     color: black;
 }
+
 .navbar:hover {
     background: #EFE9DB;
 }
@@ -85,26 +88,40 @@ body {
     }
     .nav-links {
         flex-direction: column;
+        margin-left: 13px;
         width: 100%;
         display: none;
-        background-color: white;
+        background-color: #EFE9DB;
         padding: 10px;
-        border-top: 1px solid #ccc;
+        /* border-top: 1px solid #ccc; */
     }
     .nav-links li {
         margin: 10px 0;
     }
     .navbar.active .nav-links {
         display: flex;
+        
     }
     .nav-links a {
         color: black;
     }
     .hero h1 {
+        height: 200px;
         width: 90%; /* Adjusted for smaller screens */
         padding: 20px; /* Adjusted padding */
+
+      
+    }
+    .hero h1 span {
+        height: 70px;
+        font-weight: 100;
+        font-size: 1.2rem; /* Responsive font size */
+    }
+    .possiotionText{
+        margin-top: 200px;
     }
 }
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -227,19 +244,25 @@ form {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    max-width: 60%;
     margin: 30px auto;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
 }
-
+.from1{
+    display: flex;
+}
 form img {
     width: 100%; /* Make image responsive */
     max-width: 200px; /* Limit max width */
     margin-bottom: 20px; /* Space below the image */
 }
+.formtext{
+    margin-top: 5%;
+}
 
 form h2 {
+    margin-left: 30px;
     font-size: large;
     text-align: center; /* Center the heading */
 }
@@ -251,7 +274,10 @@ form label {
     font-size: medium;
     color: #333;
 }
-
+.formimput{
+    margin-left: 30px;
+    margin-top: 10px;
+}
 form input {
     width: 100%;
     padding: 10px 15px;
@@ -432,7 +458,7 @@ form h2{
  */
   .footer {
     display: flex; 
-    justify-content: center; 
+    justify-content:center; 
     padding: 20px; 
     padding-right: 15%;
     background-color: #99BC84; 
@@ -440,23 +466,22 @@ form h2{
   }
 
 .footer-left img {
-    max-width: 40%; 
+    max-width: 20%; 
     height: auto; 
     margin-bottom: 10px;
     border-radius: 20px; 
-    margin-left: 30%;
+    margin-left: 90%;
 }
 
 .contact-info {
-    font-size: 14px; 
-    color: white;
-    margin-left: 20%; 
+    height: 100%;
+    justify-content: space-between;
+    font-size: 16px; 
+    color: white; 
+    width: 65%;
+    margin-left: 10%;
 }
 
-.footer-right {
-    display: flex; 
-    align-items: flex-start; 
-}
 
 .fb-page {
     width: 340px; 
@@ -470,12 +495,12 @@ form h2{
 }
 .social-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-size: 24px;
   transition: color 0.3s;
 }
 .social-links a:hover {
-  color: #0077ff;
+  color: wheat;
 }
 
 .typewriter-animation {
@@ -517,14 +542,14 @@ form h2{
   position: relative;
   width: 100%;
   margin: 0 auto;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   border-right: 2px solid rgba(255,255,255,.75);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);   
-  height: 80px;
-  text-wrap: wrap;
+  height: 25%;
+  /* text-wrap: wrap; */
 }
 }
 
