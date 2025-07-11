@@ -81,6 +81,9 @@ body {
     color: black;
     margin-left: auto;
 }
+.contact-links{
+     display:  block;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     .hamburger {
@@ -488,11 +491,11 @@ form h2{
   }
 
 .footer-left img {
-    max-width: 20%; 
+    max-width: 34%; 
     height: auto; 
     margin-bottom: 10px;
     border-radius: 20px; 
-    margin-left: 90%;
+    margin-left: 120%;
 }
 
 .contact-info {
@@ -501,10 +504,12 @@ form h2{
     font-size: 16px; 
     color: white; 
     width: 100%;
-    margin-left: 10%;
+    margin-left: 45%;
 }
 
-
+.contact-info p{
+    text-decoration: none;
+}
 .fb-page {
     width: 340px; 
     height: 300px;
@@ -533,7 +538,7 @@ form h2{
 .typewriter-animation2 {
   animation: 
     typewriter 5s steps(150) 6s 1 normal both, 
-    blinkingCursor 500ms steps(50) 0s 20 both normal;
+    blinkingCursor2 4000ms steps(50) 0s 20 both normal;
 }
 @keyframes typewriter {
   from { width: 0; }
@@ -541,6 +546,10 @@ form h2{
 }
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+@keyframes blinkingCursor2{
+  from { border-right-color:transparent}
   to { border-right-color: transparent; }
 }
 @keyframes delateblinker{
