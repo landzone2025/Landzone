@@ -386,7 +386,8 @@ form button:hover {
     }
 
     .footer-left img {
-        min-width: 120px; /* Make logo larger on small screens */
+        min-width: 100px; /* Make logo larger on small screens */
+        width: 120px;
         position: absolute;
         right: 35%;
     }
@@ -394,15 +395,16 @@ form button:hover {
     .contact-info {
         font-size: 16px; /* Smaller font size for contact info */
         margin-top: 130px;
-        padding-left: 5%;
+        padding-right: 30%;
         justify-content: center;
-        width: 300px;
+        width: 600px;
         /* position: absolute; */
     }
 .contact-info p{
     font-size: 18px; 
     justify-content: center;
     text-align: center;
+    width: 250px;
 }
     .footer-right {
         flex-direction: column; /* Stack Facebook page and social links */
@@ -418,6 +420,7 @@ form button:hover {
         max-width: 200px; /* Limit max width */
         margin-bottom: 20px; /* Space below the image */
     }
+    
 }
 
 /* form {
