@@ -573,19 +573,6 @@ form h2{
   /* height: 80px; */
 }
 @media (max-width: 768px) {
-  .cursor{
-  /* position: relative;
-  width: 100%;
-  margin: 0 auto;
-  /* margin-top: 5px; */
-  /* border-right: 2px solid rgba(255,255,255,.75);
-  text-align: center;
-  white-space: nowrap;
-  overflow:wrap;
-  transform: translateY(-50%);    */ 
-
-  /* text-wrap: wrap; */
-}
 .typewriter-animation, .typewriter-animation2 {
     text-wrap: wrap;
     /* height: 68px;
